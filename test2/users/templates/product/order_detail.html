@@ -1,0 +1,325 @@
+<!--{% load static %}-->
+<!--{% load humanize %}-->
+<!--<!doctype html>-->
+<!--<html class="no-js" lang="en">-->
+<!--    <head>-->
+<!--        &lt;!&ndash; meta data &ndash;&gt;-->
+<!--        <meta charset="utf-8">-->
+<!--        <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--        &lt;!&ndash; The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags &ndash;&gt;-->
+
+<!--        &lt;!&ndash;font-family&ndash;&gt;-->
+<!--		<link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'%}" rel="stylesheet">-->
+
+<!--		<link href="{% static 'https://fonts.googleapis.com/css?family=Rufina:400,700'%}" rel="stylesheet">-->
+
+
+<!--        &lt;!&ndash; title of site &ndash;&gt;-->
+<!--        <title>LV Shop</title>-->
+
+<!--        &lt;!&ndash; For favicon png &ndash;&gt;-->
+<!--		<link rel="shortcut icon" type="image/icon" href="{% static 'assets/logo/favicon.png' %}"/>-->
+
+<!--        &lt;!&ndash;font-awesome.min.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css'%}">-->
+
+<!--        &lt;!&ndash;linear icon css&ndash;&gt;-->
+<!--		<link rel="stylesheet" href="{% static 'assets/css/linearicons.css'%}">-->
+
+<!--        &lt;!&ndash;flaticon.css&ndash;&gt;-->
+<!--		<link rel="stylesheet" href="{% static 'assets/css/flaticon.css'%}">-->
+
+<!--		&lt;!&ndash;animate.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">-->
+
+<!--        &lt;!&ndash;owl.carousel.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css'%}">-->
+<!--		<link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css'%}">-->
+
+<!--        &lt;!&ndash;bootstrap.min.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">-->
+
+<!--		&lt;!&ndash; bootsnav &ndash;&gt;-->
+<!--		<link rel="stylesheet" href="{% static 'assets/css/bootsnav.css'%}" >-->
+
+<!--        &lt;!&ndash;style.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">-->
+
+<!--        &lt;!&ndash;responsive.css&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">-->
+
+<!--        &lt;!&ndash; HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries &ndash;&gt;-->
+<!--        &lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;-->
+
+<!--        &lt;!&ndash;[if lt IE 9]>-->
+<!--			<script src="{% static 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'%}"></script>-->
+<!--			<script src="{% static 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js'%}"></script>-->
+<!--        <![endif]&ndash;&gt;-->
+<!--    </head>-->
+
+<!--	-->
+<!--	<body>-->
+<!--		&lt;!&ndash;[if lte IE 9]>-->
+<!--            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>-->
+<!--        <![endif]&ndash;&gt;-->
+<!--	-->
+<!--		&lt;!&ndash;welcome-hero start &ndash;&gt;-->
+<!--		<section id="home" class="welcome-hero">-->
+
+<!--			&lt;!&ndash; top-area Start &ndash;&gt;-->
+<!--			<div class="top-area">-->
+<!--				<div class="header-area">-->
+<!--					&lt;!&ndash; Start Navigation &ndash;&gt;-->
+<!--				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">-->
+
+<!--				        <div class="container">-->
+<!--				            <div class="navbar-header">-->
+<!--				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">-->
+<!--				                    <i class="fa fa-bars"></i>-->
+<!--				                </button>-->
+<!--				                <a class="navbar-brand" href="/index">The gioi xe sang<span></span></a>-->
+<!--				            </div>-->
+<!--				        </div>&lt;!&ndash;/.container&ndash;&gt;-->
+<!--				    </nav>&lt;!&ndash;/nav&ndash;&gt;-->
+<!--				    &lt;!&ndash; End Navigation &ndash;&gt;-->
+<!--				</div>&lt;!&ndash;/.header-area&ndash;&gt;-->
+<!--			    <div class="clearfix"></div>-->
+
+<!--			</div>&lt;!&ndash; /.top-area&ndash;&gt;-->
+<!--			&lt;!&ndash; top-area End &ndash;&gt;-->
+<!--		</section>&lt;!&ndash;/.welcome-hero&ndash;&gt;-->
+<!--		&lt;!&ndash;welcome-hero end &ndash;&gt;-->
+
+<!--		&lt;!&ndash;service start &ndash;&gt;-->
+<!--		-->
+<!--		&lt;!&ndash;service end&ndash;&gt;-->
+
+<!--		&lt;!&ndash;new-cars start &ndash;&gt;-->
+<!--		<section id="new-cars" class="new-cars">-->
+<!--			<div class="container">-->
+<!--				<form method="post" enctype="multipart/form-data">-->
+<!--					{% csrf_token %}-->
+<!--					<div class="section-header">-->
+<!--					<h2>Chi tiết đơn hàng</h2>-->
+<!--					</div>&lt;!&ndash;/.section-header&ndash;&gt;-->
+<!--					<div class="new-cars-content">-->
+<!--					<table class="table caption-top">-->
+<!--                        <thead>-->
+<!--                          <tr>-->
+<!--                            <th scope="col">STT</th>-->
+<!--                            <th scope="col">Sản phẩm</th>-->
+<!--                            <th scope="col">Số lượng</th>-->
+<!--                            <th scope="col">Giá</th>-->
+<!--                            <th scope="col">Tổng giá</th>-->
+
+<!--                          </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                          <tr>-->
+<!--                            <th scope="row">1</th>-->
+<!--                            <td>{{orders.product}}</td>-->
+<!--                            <td>{{orders.quanity}}</td>-->
+<!--                            <td>{{orders.cost}}</td>-->
+<!--                            <td>{{order.sum}}</td>-->
+<!--                        </tbody>-->
+<!--                      </table>-->
+<!--					</div>&lt;!&ndash;/.new-cars-content&ndash;&gt;-->
+<!--                	<br><br>-->
+<!--                	<h2>Thông tin cá nhân</h2>-->
+<!--                	<p>- Tên nguoi nhan hang: <input value="{{order.customer}}"></p>-->
+<!--                	<p>- Gmail: <input value="{{users.email}}"></p>-->
+<!--                	<p>- Địa chỉ: <input value="{{users.address}}"></p>-->
+<!--                	<p>- Sđt: <input value="{{users.phone}}"></p>-->
+<!--               	 </p>-->
+<!--					<p>-->
+<!--					<button class="welcome-btn new-cars-btn" >-->
+<!--						<a href="/shipping/{{order.id}}">Xác nhận</a></button>-->
+<!--					</p>-->
+<!--				</form>-->
+<!--			</div>&lt;!&ndash;/.container&ndash;&gt;-->
+
+<!--		</section>&lt;!&ndash;/.new-cars&ndash;&gt;-->
+<!--		&lt;!&ndash;new-cars end &ndash;&gt;-->
+
+<!--		<section id="brand"  class="brand">-->
+<!--			<div class="container">-->
+<!--				<div class="brand-area">-->
+<!--					<div class="owl-carousel owl-theme brand-item">-->
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br1.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br2.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br3.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br4.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br5.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+
+<!--						<div class="item">-->
+<!--							<a href="#">-->
+<!--								<img src="{% static 'assets/images/brand/br6.jpg' %}" alt="brand-image" />-->
+<!--							</a>-->
+<!--						</div>&lt;!&ndash;/.item&ndash;&gt;-->
+<!--					</div>&lt;!&ndash;/.owl-carousel&ndash;&gt;-->
+<!--				</div>&lt;!&ndash;/.clients-area&ndash;&gt;-->
+
+<!--			</div>&lt;!&ndash;/.container&ndash;&gt;-->
+
+<!--		</section>&lt;!&ndash;/brand&ndash;&gt;-->
+<!--		&lt;!&ndash;brand end &ndash;&gt;-->
+
+
+<!--		&lt;!&ndash;blog start &ndash;&gt;-->
+<!--		<section id="blog" class="blog"></section>&lt;!&ndash;/.blog&ndash;&gt;-->
+<!--		&lt;!&ndash;blog end &ndash;&gt;-->
+
+<!--		&lt;!&ndash;contact start&ndash;&gt;-->
+<!--		<footer id="contact"  class="contact">-->
+<!--			<div class="container">-->
+<!--				<div class="footer-top">-->
+<!--					<div class="row">-->
+<!--						<div class="col-md-3 col-sm-6">-->
+<!--							<div class="single-footer-widget">-->
+<!--								<div class="footer-logo">-->
+<!--									<a href="index.html">Thế giới xe sang</a>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.-->
+<!--								</p>-->
+<!--								<div class="footer-contact">-->
+<!--									<p>info@themesine.com</p>-->
+<!--									<p>+1 (885) 2563154554</p>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2 col-sm-6">-->
+<!--							<div class="single-footer-widget">-->
+<!--								<h2>about devloon</h2>-->
+<!--								<ul>-->
+<!--									<li><a href="#">about us</a></li>-->
+<!--									<li><a href="#">career</a></li>-->
+<!--									<li><a href="#">terms <span> of service</span></a></li>-->
+<!--									<li><a href="#">privacy policy</a></li>-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-3 col-xs-12">-->
+<!--							<div class="single-footer-widget">-->
+<!--								<h2>top brands</h2>-->
+<!--								<div class="row">-->
+<!--									<div class="col-md-7 col-xs-6">-->
+<!--										<ul>-->
+<!--											<li><a href="#">BMW</a></li>-->
+<!--											<li><a href="#">lamborghini</a></li>-->
+<!--											<li><a href="#">camaro</a></li>-->
+<!--											<li><a href="#">audi</a></li>-->
+<!--											<li><a href="#">infiniti</a></li>-->
+<!--											<li><a href="#">nissan</a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--									<div class="col-md-5 col-xs-6">-->
+<!--										<ul>-->
+<!--											<li><a href="#">ferrari</a></li>-->
+<!--											<li><a href="#">porsche</a></li>-->
+<!--											<li><a href="#">land rover</a></li>-->
+<!--											<li><a href="#">aston martin</a></li>-->
+<!--											<li><a href="#">mersedes</a></li>-->
+<!--											<li><a href="#">opel</a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-offset-1 col-md-3 col-sm-6">-->
+<!--							<div class="single-footer-widget">-->
+<!--								<h2>news letter</h2>-->
+<!--								<div class="footer-newsletter">-->
+<!--									<p>-->
+<!--										Subscribe to get latest news  update and informations-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<div class="hm-foot-email">-->
+<!--									<div class="foot-email-box">-->
+<!--										<input type="text" class="form-control" placeholder="Add Email">-->
+<!--									</div>&lt;!&ndash;/.foot-email-box&ndash;&gt;-->
+<!--									<div class="foot-email-subscribe">-->
+<!--										<span><i class="fa fa-arrow-right"></i></span>-->
+<!--									</div>&lt;!&ndash;/.foot-email-icon&ndash;&gt;-->
+<!--								</div>&lt;!&ndash;/.hm-foot-email&ndash;&gt;-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="footer-copyright">-->
+<!--					<div class="row">-->
+<!--						<div class="col-sm-6">-->
+<!--							<p>-->
+<!--								&copy; copyright.designed and developed by <a href="https://www.themesine.com/">themesine</a>.-->
+<!--							</p>&lt;!&ndash;/p&ndash;&gt;-->
+<!--						</div>-->
+<!--						<div class="col-sm-6">-->
+<!--							<div class="footer-social">-->
+<!--								<a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--								<a href="#"><i class="fa fa-instagram"></i></a>-->
+<!--								<a href="#"><i class="fa fa-linkedin"></i></a>-->
+<!--								<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+<!--								<a href="#"><i class="fa fa-behance"></i></a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>&lt;!&ndash;/.footer-copyright&ndash;&gt;-->
+<!--			</div>&lt;!&ndash;/.container&ndash;&gt;-->
+
+<!--			<div id="scroll-Top">-->
+<!--				<div class="return-to-top">-->
+<!--					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>-->
+<!--				</div>-->
+
+<!--			</div>&lt;!&ndash;/.scroll-Top&ndash;&gt;-->
+
+<!--        </footer>&lt;!&ndash;/.contact&ndash;&gt;-->
+<!--		&lt;!&ndash;contact end&ndash;&gt;-->
+
+
+
+<!--		&lt;!&ndash; Include all js compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+<!--		<script src="{% static 'assets/js/jquery.js' %}"></script>-->
+
+<!--        &lt;!&ndash;modernizr.min.js&ndash;&gt;-->
+<!--        <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' %}"></script>-->
+
+<!--		&lt;!&ndash;bootstrap.min.js&ndash;&gt;-->
+<!--        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>-->
+
+<!--		&lt;!&ndash; bootsnav js &ndash;&gt;-->
+<!--		<script src="{% static 'assets/js/bootsnav.js' %}"></script>-->
+
+<!--		&lt;!&ndash;owl.carousel.js&ndash;&gt;-->
+<!--        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>-->
+
+<!--		<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' %}"></script>-->
+
+<!--        &lt;!&ndash;Custom JS&ndash;&gt;-->
+<!--        <script src="{% static 'assets/js/custom.js' %}"></script>-->
+<!--        -->
+<!--    </body>-->
+<!--	-->
+<!--</html>-->

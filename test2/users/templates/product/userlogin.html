@@ -1,0 +1,8 @@
+<form  style=" text-align: center;  display: block;color:	color: rgb(255 255 255) ;" method="post" >
+  {% csrf_token %}
+  <div class="center">
+  <p>Email: {{form.email}}</p>
+  <p>Password: {{form.password}}</p>
+    <input type="submit" value="login">
+  </div>
+</form>

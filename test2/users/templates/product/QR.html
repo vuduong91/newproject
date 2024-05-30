@@ -1,0 +1,260 @@
+{% load static %}
+{% load humanize %}
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'%}" rel="stylesheet">
+
+		<link href="{% static 'https://fonts.googleapis.com/css?family=Rufina:400,700'%}" rel="stylesheet">
+
+
+        <!-- title of site -->
+        <title>LV Shop</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="{% static 'assets/logo/favicon.png' %}"/>
+
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css'%}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'assets/css/linearicons.css'%}">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="{% static 'assets/css/flaticon.css'%}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css'%}">
+		<link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css'%}">
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootsnav.css'%}" >
+
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+        <!--[if lt IE 9]>
+			<script src="{% static 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js'%}"></script>
+			<script src="{% static 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js'%}"></script>
+        <![endif]-->
+        <meta charset="UTF-8">
+    <title>Cảm ơn bạn đã đặt hàng</title>
+    </head>
+<body>
+<h1 style=" text-align: center;">Thế giới xe sang</h1>
+<h2 style=" text-align: center;">Thanh toán bằng QR</h2>
+<p><img style="weight:400px;height:500px" align="left" src="{% static 'assets/images/brand/maqr.png' %}" alt="brand-image">Cảm ơn quý khách đã sử dụng hình thức chuyển khoản. Do thời gian đặt xe sẽ mất một khoảng thời gian nên bạn có thể chuyển khoản toàn bộ xe hoặc chuyển 30%/ tổng tiền xe để đặt cọc xe.
+    <br>Vui lòng khi chuyển khoản điền thông tin chuyển khoản như sau: Tên xe + SĐT + Họ tên người đặt xe
+    <br>Sau khi chuyển vui lòng chụp lại màn hình chuyển khoản và đợi nhân viên hỗ trợ gọi điện xác nhận thông tin hoặc có thể gọi tới số: 0928825568 để nhận hộ trợ trực tiếp
+    </p>
+<br><h3>Xin trân thành cám ơn vì bạn đã tin tưởng đặt xe bên chúng tôi</h3>
+<button class="welcome-btn new-cars-btn">
+    <a  href="/index">
+        Trở về trang chủ
+    </a>
+</button>
+</body>
+</section><!--/.clients-say-->
+		<!-- clients-say end -->
+
+		<!--brand strat -->
+			<section id="brand"  class="brand">
+				<div class="container">
+					<div class="brand-area">
+						<div class="owl-carousel owl-theme brand-item">
+							<div class="item">
+								<a href="/productcate/1">
+									<img src="{% static 'assets/images/brand/br1.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+							<div class="item">
+								<a href="/productcate/2">
+									<img src="{% static 'assets/images/brand/br2.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+							<div class="item">
+								<a href="productcate/3">
+									<img src="{% static 'assets/images/brand/br3.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+							<div class="item">
+								<a href="productcate/4">
+									<img src="{% static 'assets/images/brand/br4.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+
+							<div class="item">
+								<a href="productcate/5">
+									<img src="{% static 'assets/images/brand/br5.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+
+							<div class="item">
+								<a href="productcate/6">
+									<img src="{% static 'assets/images/brand/br6.jpg' %}" alt="brand-image" />
+								</a>
+							</div><!--/.item-->
+						</div><!--/.owl-carousel-->
+					</div><!--/.clients-area-->
+
+				</div><!--/.container-->
+
+			</section><!--/brand-->
+			<!--brand end -->
+
+			<!--blog start -->
+			<section id="blog" class="blog"></section><!--/.blog-->
+			<!--blog end -->
+
+			<!--contact start-->
+			<footer id="contact"  class="contact">
+				<div class="container">
+					<div class="footer-top">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="single-footer-widget">
+									<div class="footer-logo">
+										<a href="index.html">Thế giới xe sang</a>
+									</div>
+									<p>
+										Với uy tín và sự kết hợp của nhiều hãng lớn chúng tôi đảm bảo 100%
+									</p>
+									<div class="footer-contact">
+										<p>longvuit2003@gmail.com</p>
+										<p>0928825568</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-6">
+								<div class="single-footer-widget">
+									<h2>About devloon</h2>
+									<ul>
+										<li><a href="#">about us</a></li>
+										<li><a href="#">career</a></li>
+										<li><a href="#">terms <span> of service</span></a></li>
+										<li><a href="#">privacy policy</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<div class="single-footer-widget">
+									<h2>top brands</h2>
+									<div class="row">
+										<div class="col-md-7 col-xs-6">
+											<ul>
+												<li><a href="#">BMW</a></li>
+												<li><a href="#">lamborghini</a></li>
+												<li><a href="#">camaro</a></li>
+												<li><a href="#">audi</a></li>
+												<li><a href="#">infiniti</a></li>
+												<li><a href="#">nissan</a></li>
+											</ul>
+										</div>
+										<div class="col-md-5 col-xs-6">
+											<ul>
+												<li><a href="#">ferrari</a></li>
+												<li><a href="#">porsche</a></li>
+												<li><a href="#">land rover</a></li>
+												<li><a href="#">aston martin</a></li>
+												<li><a href="#">mersedes</a></li>
+												<li><a href="#">opel</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-offset-1 col-md-3 col-sm-6">
+								<div class="single-footer-widget">
+									<h2>news letter</h2>
+									<div class="footer-newsletter">
+										<p>
+											Subscribe to get latest news  update and informations
+										</p>
+									</div>
+									<div class="hm-foot-email">
+										<div class="foot-email-box">
+											<input type="text" class="form-control" placeholder="Add Email">
+										</div><!--/.foot-email-box-->
+										<div class="foot-email-subscribe">
+											<span><i class="fa fa-arrow-right"></i></span>
+										</div><!--/.foot-email-icon-->
+									</div><!--/.hm-foot-email-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>
+									&copy; copyright.designed and developed by <a href="'{% static 'https://www.themesine.com/'%">themesine</a>.
+								</p><!--/p-->
+							</div>
+							<div class="col-sm-6">
+								<div class="footer-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+									<a href="#"><i class="fa fa-pinterest-p"></i></a>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
+					</div><!--/.footer-copyright-->
+				</div><!--/.container-->
+
+				<div id="scroll-Top">
+					<div class="return-to-top">
+						<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+					</div>
+
+				</div><!--/.scroll-Top-->
+
+			</footer><!--/.contact-->
+			<!--contact end-->
+
+
+
+			<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+			<script src="{% static 'assets/js/jquery.js' %}"></script>
+
+			<!--modernizr.min.js-->
+			<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' %}"></script>
+
+			<!--bootstrap.min.js-->
+			<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+			<!-- bootsnav js -->
+			<script src="{% static 'assets/js/bootsnav.js' %}"></script>
+
+			<!--owl.carousel.js-->
+			<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+
+			<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' %}"></script>
+
+			<!--Custom JS-->
+			<script src="{% static 'assets/js/custom.js' %}"></script>
+
+		</body>
+
+	</html>
